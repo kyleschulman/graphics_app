@@ -1,9 +1,9 @@
 <html>
     <head><link rel="stylesheet" type="text/css" href="graphics.css"></head>
-    <h4>sj zxc;m c</h4>
-    <div class=box id=b1></div>
-    <div class=box id=b2></div>
-    <div class=box id=b3></div>
+    <h4>Austria to Grermany Flagc</h4>
+    <div class=box1 id=b1></div>
+    <div class=box2 id=b2></div>
+    <div class=box3 id=b3></div>
     <script>
         var box1 = document.getElementById("b1");
         var box2 = document.getElementById("b2");
@@ -13,29 +13,43 @@
   changeColor1(event);
 });
         box2.addEventListener('click', (event) => {
-  changeColor2(event);
+  changeColor1(event);
 });
         box3.addEventListener('click', (event) => {
-  changeColor3(event);
+  changeColor1(event);
 });
 
-        function changeColor(event) {
+        function changeColor1(event) {
   let box = event.target
   let color = box.style.backgroundColor;
-  if(color == "green") {
+  if( box.style.backgroundColor == "red") {
+    box.style.backgroundColor = "black";
+  }else(color == "white") {
     box.style.backgroundColor = "red";
-  } else {
-    box.style.backgroundColor = "green";
-  }
+
+
+
+//  } else {
+//    box.style.backgroundColor = "red";
+//  }
 }
-        function changeColor(event) {
-  let box = event.target
-  let color = box.style.backgroundColor;
-  if(color == "green") {
-    box.style.backgroundColor = "red";
-  } else {
-    box.style.backgroundColor = "green";
-  }
-}
+//       function changeColor2(event) {
+//  let box = event.target
+//  let color = box.style.backgroundColor;
+//  if(color == "white") {
+//    box.style.backgroundColor = "red";
+//  } else {
+//    box.style.backgroundColor = "white";
+//  }
+//}
+//        function changeColor3(event) {
+//  let box = event.target
+//  let color = box.style.backgroundColor;
+//  if(color == "red") {
+//    box.style.backgroundColor = "yellow";
+//  } else {
+//    box.style.backgroundColor = "red";
+//  }
+//}
     </script>
 </html>
