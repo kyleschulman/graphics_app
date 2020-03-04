@@ -1,3 +1,41 @@
 <html>
+    <head><link rel="stylesheet" type="text/css" href="graphics.css"></head>
+    <h4>sj zxc;m c</h4>
+    <div class=box id=b1></div>
+    <div class=box id=b2></div>
+    <div class=box id=b3></div>
+    <script>
+        var box1 = document.getElementById("b1");
+        var box2 = document.getElementById("b2");
+        var box3 = document.getElementById("b3");
 
+        box1.addEventListener('click', (event) => {
+  changeColor1(event);
+});
+        box2.addEventListener('click', (event) => {
+  changeColor2(event);
+});
+        box3.addEventListener('click', (event) => {
+  changeColor3(event);
+});
+
+        function changeColor(event) {
+  let box = event.target
+  let color = box.style.backgroundColor;
+  if(color == "green") {
+    box.style.backgroundColor = "red";
+  } else {
+    box.style.backgroundColor = "green";
+  }
+}
+        function changeColor(event) {
+  let box = event.target
+  let color = box.style.backgroundColor;
+  if(color == "green") {
+    box.style.backgroundColor = "red";
+  } else {
+    box.style.backgroundColor = "green";
+  }
+}
+    </script>
 </html>
