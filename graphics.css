@@ -1,15 +1,17 @@
 .box1 {
-  background-color: red;
-  width: 450px;
-  height: 100px;
+    background-color: red;
+    width: 450px;
+    height: 100px;
 }
+
 .box2 {
-  background-color: white;
-  width: 450px;
-  height: 100px;
+    background-color: white;
+    width: 450px;
+    height: 100px;
 }
+
 .box3 {
-  background-color: green;
-  width: 450px;
-  height: 100px;
+    background-color: green;
+    width: 450px;
+    height: 100px;
 }
