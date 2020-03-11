@@ -1,13 +1,11 @@
 var img = document.createElement("img");
-
 var img2 = document.createElement("img");
 
-var but = document.getElementById("my_button");
+let but = document.getElementById("my_button");
 
 but.addEventListener("mouseover", ()=>{
  rollDice();
 })
-
 let bro = document.getElementById("dice");
 
 bro.addEventListener("dblclick",()=> {
@@ -51,13 +49,18 @@ document.getElementById("my_button").onmouseover = function(){
 
 window.addEventListener("keypress", changeColor);
 function changeColor(event) {
-    if (event.key === "b"){
+    if (event.key === "a"){
        document.getElementById("output").style.color = '#33FFB5';
   document.getElementById("output2").style.color = '#F09FDD';
-    } else if (event.key === "o") {
-
+      rollDice();
+    } else if (event.key === "l") {
+       document.getElementById("output").style.color = '#808B96';
+  document.getElementById("output2").style.color = '#808B96';
+      rollDice();
     } else {
-
+       document.getElementById("output").style.color = 'black';
+  document.getElementById("output2").style.color = 'black';
+      rollDice();
     }
 }
 
